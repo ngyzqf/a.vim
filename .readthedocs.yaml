@@ -32,4 +32,8 @@ sphinx:
 # See https://docs.readthedocs.io/en/stable/guides/reproducible-builds.html
 python:
   install:
+    - method: pip
+      path: .
+      extra_requirements:
+        - all  # 这将安装所有在 setup.py 中定义的 extras，包括 docs 和 tests 等。
     - requirements: doc/requirements.txt
