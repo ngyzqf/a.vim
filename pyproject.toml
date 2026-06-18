@@ -1,0 +1,10 @@
+[tool.poetry]
+name = "mypackage"
+version = "0.1.0"
+authors = ["gyniu1024@gmail.com"]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+
+[tool.poetry.group.doc.dependencies]
+sphinx = "^4.2"
